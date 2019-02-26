@@ -3,8 +3,7 @@ const compression = require('compression');
 const cors = require('cors');
 const path = require('path');
 const app = express();
-// const port = process.env.PORT;
-const port = 4000;
+const port = process.env.PORT;
 app.use(compression());
 app.use(cors());
 
