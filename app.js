@@ -1,8 +1,10 @@
 const express = require("express");
 const compression = require('compression');
 const cors = require('cors');
+const path = require('path');
 const app = express();
-const port = process.env.PORT;
+// const port = process.env.PORT;
+const port = 4000;
 app.use(compression());
 app.use(cors());
 

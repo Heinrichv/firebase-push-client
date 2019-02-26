@@ -14,7 +14,8 @@
   "dependencies": {
     "express": "^4.16.2",
     "compression": "^1.7.1",
-    "cors": "^2.8.4"
+    "cors": "^2.8.4",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "awesome-typescript-loader": "^3.2.3",
