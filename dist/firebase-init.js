@@ -1,20 +1,18 @@
 var config = {
-  apiKey: "AIzaSyDYGAnO1HgwBo1Jap-qUWjmqjTUrESaDsk",
   authDomain: "propify-c0f15.firebaseapp.com",
   databaseURL: "https://propify-c0f15.firebaseio.com",
   projectId: "propify-c0f15",
-  storageBucket: "propify-c0f15.appspot.com",
   messagingSenderId: "508221299021"
 };
+
+var vapid = 'BMHsTfD_KmLFAOOzm9mDl9w9LOhtF8mw7yAZma6bM1MJmbyb1Oh7R-dunh6pATepEM7VqpdMe7IviwXWRflVOF4';
 
 firebase.initializeApp(config);
 
 const messaging = firebase.messaging();
 
-// [START set_public_vapid_key]
 // Add the public key generated from the console here.
-messaging.usePublicVapidKey('BMHsTfD_KmLFAOOzm9mDl9w9LOhtF8mw7yAZma6bM1MJmbyb1Oh7R-dunh6pATepEM7VqpdMe7IviwXWRflVOF4');
-// [END set_public_vapid_key]
+messaging.usePublicVapidKey(vapid);
 
 // IDs of divs that display Instance ID token UI or request permission UI.
 const tokenDivId = 'token_div';
