@@ -29,6 +29,29 @@ limitations under the License.
   <link rel="stylesheet" href="main.css">
 
   <link rel="manifest" href="/manifest.json">
+  
+  <script type="text/javascript">
+    var static = {
+      firebase: {
+        authDomain: "osiris-trading-push.firebaseapp.com",
+        databaseURL: "https://osiris-trading-push.firebaseio.com",
+        projectId: "osiris-trading-push",
+        messagingSenderId: "833600745389"
+      },
+      data: {
+        culture: 'en-US',
+        countryCode: 'ZA',
+        currency: 'USD',
+        masterToken: 'cfff59df-bde2-44d3-bb48-52e8136a0f82',
+        bannerTag: "betway-direct",
+
+        vapid: 'BKw3s_thDjFknhVK7LPCHy1VEXKYB-oTdUQdb1_12qYrARqv-b6ywTuSQsitAs_TnUB0hMdFsegObg9YgZOdCDY',
+        brandCode: 'BSA',
+        siteCode: 'www.betway.co.za',
+        pushApi: 'http://pushapi.gmgamingsystems.com.dev.labenv'
+      }
+    };
+  </script>
 </head>
 
 <body>
@@ -66,13 +89,6 @@ limitations under the License.
   <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-messaging.js"></script>
   <script src="./firebase-init.js"></script>
-
-  <script>
-    document.onload = requestPermission();
-  </script>
-
-
-
 </body>
 
 </html>
